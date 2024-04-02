@@ -1,0 +1,41 @@
+.custom-toolbar {
+    background-color: #1976d2; /* Primary color */
+    padding: 0 20px;
+  }
+  
+  .toolbar-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .add-user-button,
+  .view-users-button {
+    margin-left: 10px; /* Add space between buttons */
+    background-color: #2196f3; /* Button color */
+    color: white;
+  }
+  
+  .add-user-button:hover,
+  .view-users-button:hover {
+    background-color: #0d47a1; /* Darker color on hover */
+  }
+  
+  .main-body {
+    padding-top: 20px;
+    margin: 0 auto;
+    max-width: 1348px;
+    mat-form-field {
+      width: 100%;
+    }
+  }
+  
+  .action {
+    display: flex;
+    gap: 5px;
+  }
+  

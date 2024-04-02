@@ -1,0 +1,55 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "user": [
+    {
+      "id": "7511",
+      "firstName": "ahmed",
+      "lastName": "yasser",
+      "email": "ahmed@gamil.com",
+      "passwoord": "123",
+      "role": [
+        "Admin"
+      ],
+      "gender": "male"
+    },
+    {
+      "id": "23c7",
+      "firstName": "khalid",
+      "lastName": "mohammed",
+      "email": "khalid@yahoo.com",
+      "passwoord": "12",
+      "role": [
+        "User"
+      ],
+      "gender": "male"
+    },
+    {
+      "id": "14e4",
+      "firstName": "Habiba",
+      "lastName": "Amr",
+      "email": "habiba@gmail.com",
+      "passwoord": "123",
+      "role": [
+        "Admin",
+        "User"
+      ],
+      "gender": "female"
+    }
+  ]
+}

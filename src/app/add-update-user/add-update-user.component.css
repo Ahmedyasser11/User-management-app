@@ -1,0 +1,52 @@
+/* Container styling */
+.content {
+  padding: 20px;
+}
+
+/* Form field styling */
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+input.mat-input {
+  width: calc(100% - 24px);
+}
+
+/* Label styling */
+.mat-form-field-label {
+  color: #333;
+}
+
+/* Selection list styling */
+.mat-selection-list {
+  padding-left: 0;
+}
+
+/* Radio button group styling */
+.mat-radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Radio button label styling */
+.mat-radio-button {
+  margin-bottom: 10px;
+}
+
+/* Dialog actions styling */
+.mat-dialog-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Cancel button styling */
+button[type="button"][mat-dialog-close] {
+  background-color: #ccc;
+  color: #333;
+}
+
+/* Save button styling */
+
