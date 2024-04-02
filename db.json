@@ -1,14 +1,14 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "title": "json-server",
       "author": "typicode"
     }
   ],
   "comments": [
     {
-      "id": 1,
+      "id": "1",
       "body": "some comment",
       "postId": 1
     }
@@ -29,21 +29,40 @@
       "gender": "male"
     },
     {
-      "id": "23c7",
-      "firstName": "khalid",
-      "lastName": "mohammed",
-      "email": "khalid@yahoo.com",
-      "passwoord": "12",
-      "role": [
-        "User"
-      ],
-      "gender": "male"
-    },
-    {
-      "id": "14e4",
       "firstName": "Habiba",
       "lastName": "Amr",
       "email": "habiba@gmail.com",
+      "passwoord": "123",
+      "role": [
+        "Admin",
+        "User"
+      ],
+      "gender": "female",
+      "id": "14e4"
+    },
+    {
+      "id": "11fd",
+      "firstName": "Mohamed",
+      "lastName": "Ahmed",
+      "email": "mohamed@gamil.com",
+      "passwoord": "1234",
+      "role": "user",
+      "gender": "male"
+    },
+    {
+      "id": "b2a7",
+      "firstName": "Jana",
+      "lastName": "ahmed",
+      "email": "jana@gmail.com",
+      "passwoord": "123",
+      "role": "user",
+      "gender": "female"
+    },
+    {
+      "id": "7995",
+      "firstName": "Dalia ",
+      "lastName": "amr",
+      "email": "daila@gmail.com",
       "passwoord": "123",
       "role": [
         "Admin",

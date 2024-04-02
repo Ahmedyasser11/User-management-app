@@ -8,8 +8,9 @@ import { Observable } from 'rxjs';
 export class ServicesService {
 
   constructor(private _http: HttpClient) { }
-  addUser(data: any): Observable<any>{
-    return this._http.post('http://localhost:3000/user',data);
+  addUser(dataa: any): Observable<any>{
+    debugger
+    return this._http.post('http://localhost:3000/user',dataa);
   }
   getuser():Observable<any>{
     return this._http.get('http://localhost:3000/user');
@@ -18,7 +19,7 @@ export class ServicesService {
     debugger;
     return this._http.delete(`http://localhost:3000/user/${id}`);
   }
-  updateUSer(id: number, data: any): Observable<any> {
-    return this._http.put(`http://localhost:3000/user/${id}`,data);
+  updateUSer(id: number, dataa: any): Observable<any> {
+    return this._http.put(`http://localhost:3000/user/${id}`,dataa);
   }
 }

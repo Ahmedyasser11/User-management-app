@@ -11,12 +11,8 @@ import { AddUpdateUserComponent } from '../add-update-user/add-update-user.compo
   styleUrl: './main-page.component.css'
 })
 export class MainPageComponent {
-  static getusers() {
-    throw new Error('Method not implemented.');
-  }
   displayedColumns: string[] = ['id', 'firstName', 'lastName', 'email','gender','role','action'];
   dataSource!: MatTableDataSource<any>;
-
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
   constructor(private _dialog: MatDialog,private _userSer:ServicesService){}
@@ -30,7 +26,7 @@ export class MainPageComponent {
       },
     });
   }
-  public getusers(){
+  getusers(){
     this._userSer.getuser().subscribe({
       next: (res)=>{
        this.dataSource = new MatTableDataSource(res);
@@ -49,7 +45,7 @@ export class MainPageComponent {
     }
   }
   deleteUser(id: number) {
-    debugger
+    
     this._userSer.deleteUser(id).subscribe({
       next: (res) =>{
         alert('User deleted');

@@ -9,8 +9,6 @@ import { AddUpdateUserComponent } from '../add-update-user/add-update-user.compo
   styleUrl: './signup.component.css'
 })
 export class SignupComponent {
-  User: any;
-  Admin: any;
   usersForm: FormGroup;
   typesOfShoes: string[] = ['Admin', 'User'];
   constructor(
@@ -27,6 +25,7 @@ export class SignupComponent {
       });
     }
       onFormSubmit() {
+        debugger
         if (this.usersForm.valid){
           this._userServies.addUser(this.usersForm.value).subscribe({
             next: (val: any)=>{
