@@ -41,22 +41,15 @@
       "id": "14e4"
     },
     {
-      "id": "11fd",
-      "firstName": "Mohamed",
-      "lastName": "Ahmed",
-      "email": "mohamed@gamil.com",
-      "passwoord": "1234",
-      "role": "user",
-      "gender": "male"
-    },
-    {
-      "id": "b2a7",
       "firstName": "Jana",
       "lastName": "ahmed",
       "email": "jana@gmail.com",
       "passwoord": "123",
-      "role": "user",
-      "gender": "female"
+      "role": [
+        "Admin"
+      ],
+      "gender": "female",
+      "id": "b2a7"
     },
     {
       "id": "7995",
@@ -69,6 +62,54 @@
         "User"
       ],
       "gender": "female"
+    },
+    {
+      "firstName": "new",
+      "lastName": "user",
+      "email": "new@gmail.com",
+      "passwoord": "123",
+      "role": [
+        "Admin",
+        "User"
+      ],
+      "gender": "male",
+      "id": "d358"
+    },
+    {
+      "id": "f4f1",
+      "firstName": "new",
+      "lastName": "user2",
+      "email": "new_user2@gmail.com",
+      "passwoord": "1234",
+      "role": [
+        "Admin"
+      ],
+      "gender": "female"
+    },
+    {
+      "id": "60a3",
+      "firstName": "dasd",
+      "lastName": "sdasd",
+      "email": "adasd@sdf",
+      "passwoord": "dasdasd",
+      "role": "user",
+      "gender": "male"
+    },
+    {
+      "id": "776a",
+      "firstName": "sadsad",
+      "lastName": "sdasdasd",
+      "email": "sadasd@ca",
+      "passwoord": "asx",
+      "role": "user",
+      "gender": "female"
+    },
+    {
+      "id": "da60",
+      "firstName": "omeeer",
+      "passwoord": "12345",
+      "email": "omae@gmail.com",
+      "phone": "01065488651"
     }
   ]
 }

@@ -16,13 +16,10 @@ constructor(
   private _fb: FormBuilder, private _userServies: ServicesService, private _dialogRef: MatDialogRef<AddUpdateUserComponent>, @Inject(MAT_DIALOG_DATA) public data: any)
   {
     this.usersForm = this._fb.group({
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
+      userName: ['', Validators.required],
+      phoneNumber: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      passwoord: ['', Validators.required],
-      role: '',
-      gender: ['', Validators.required],
-      
+      password: ['', Validators.required], 
     });
   }
   ngOnInit(): void {
@@ -41,6 +38,7 @@ constructor(
     onFormSubmit() {
       if (this.usersForm.valid){
         if(this.data){
+          
           this._userServies.updateUSer(this.data.id,this.usersForm.value).subscribe({
             next: (val: any)=>{
               

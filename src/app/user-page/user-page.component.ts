@@ -4,6 +4,7 @@ import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import { ServicesService } from '../services.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-user-page',
@@ -12,22 +13,25 @@ import { ServicesService } from '../services.service';
 })
 export class UserPageComponent {
  
-  displayedColumns: string[] = [ 'firstName', 'lastName', 'email','gender','role'];
+  displayedColumns: string[] = [ 'userName','email','phoneNumber'];
   dataSource!: MatTableDataSource<any>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
-  constructor(private _dialog: MatDialog,private _userSer:ServicesService){}
+  constructor(private _dialog: MatDialog,private _userSer:ServicesService,private _http:HttpClient){}
   
-  public getusers(){
-    this._userSer.getuser().subscribe({
-      next: (res)=>{
-       this.dataSource = new MatTableDataSource(res);
-       this.dataSource.sort= this.sort;
-       this.dataSource.paginator=this.paginator;
-      },
-      error: console.log,
-    })
+  getusers() {
+    this._http.get<any>('https://localhost:7107/User/GetAllUsers').subscribe(response => {
+      const data = response.data; 
+      if (Array.isArray(data)) {
+        this.dataSource = new MatTableDataSource<any>(data);
+        this.dataSource.paginator = this.paginator;
+      } else {
+        console.error('Invalid data format:', response);
+      }
+    }, error => {
+      console.error('Error fetching users:', error);
+    });
   }
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
